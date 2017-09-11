@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
     android:background="@drawable/gradient"
     tools:context="com.androidpractice.abha.carouselpicker.MainActivity">
@@ -16,4 +15,29 @@
         android:layout_height="200dp"
         app:items_visible="three" />
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnPrev1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:background="@android:color/transparent"
+            android:alpha="1"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"/>
+
+        <Button
+            android:id="@+id/btnNext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:background="@android:color/transparent"
+            android:alpha="1"
+            android:layout_marginStart="190dp"/>
+    </LinearLayout>
+</RelativeLayout>
