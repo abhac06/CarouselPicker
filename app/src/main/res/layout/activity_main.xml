@@ -6,16 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@android:color/darker_gray"
+    android:gravity="center"
+    android:background="@drawable/gradient"
     tools:context="com.androidpractice.abha.carouselpicker.MainActivity">
 
-
     <in.goodiebag.carouselpicker.CarouselPicker
-        android:layout_marginTop="150dp"
         android:id="@+id/carouselPicker1"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@android:color/darker_gray"
         app:items_visible="three" />
 
 </LinearLayout>
